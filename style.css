@@ -32,6 +32,7 @@ header{
     background-size: cover;
     background-position: center bottom;
     padding-top: 2rem;
+    position: relative;
 }
 .header-nav {
     max-width: var(--main-page-max-width);
@@ -39,6 +40,13 @@ header{
     margin-right: auto;
     display: flex;
     justify-content: space-between;
+}
+.tagline {
+    width: var(--main-page-max-width);
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
 }
 .container {
     display: flex;
@@ -154,4 +162,19 @@ form {
     width: 100%;
     margin: 1rem 0;
     padding: 1rem;
+}
+textarea.form_input {
+    border: 1px solid var(--main-input-color);
+    height: 225px;
+    overflow:hidden;
+}
+.form_submit {
+    background: none;
+    margin: 12px 0;
+}
+.kapcsolat {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url();
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 100px black inset;
 }
